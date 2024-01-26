@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Deploy to Aptible
-      uses: aptible/aptible-deploy-action@d5e53a25fc5085dd52fa5c45117d241a6173e82c
+      uses: aptible/aptible-deploy-action@8435d30f595aa2871312e0725df5f21e5268633b
       with:
         type: git
         environment: zoo
