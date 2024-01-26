@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Deploy to Aptible
-      uses: aptible/aptible-deploy-action@8435d30f595aa2871312e0725df5f21e5268633b
+      uses: aptible/aptible-deploy-action@96798f6b7bdbbd109f17edf4554b6be9c8a0f937
       with:
         type: git
         environment: zoo
