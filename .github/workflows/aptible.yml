@@ -10,7 +10,7 @@ jobs:
       with:
         fetch-depth: 0
     - name: Deploy to Aptible
-      uses: aptible/aptible-deploy-action@583483850ad7cad2a95f3230fe392bcf607e8c8e
+      uses: aptible/aptible-deploy-action@8669dff0770d30ae1ea3c5e65d666a2e11a8f96c
       with:
         type: git
         environment: zoo
