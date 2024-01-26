@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to Aptible
+      uses: aptible/aptible-deploy-action@8670fff
+      with:
+        type: git
+        environment: zoo
+        app: express
+        git_remote: app-65942.on-aptible.com
+        private_key: ${{ secrets.PRIVATE_KEY }}
