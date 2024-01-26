@@ -6,6 +6,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v4
     - name: Deploy to Aptible
       uses: aptible/aptible-deploy-action@8435d30f595aa2871312e0725df5f21e5268633b
       with:
